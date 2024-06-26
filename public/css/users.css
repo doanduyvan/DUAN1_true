@@ -1,0 +1,48 @@
+.dv_account{
+    position: relative;
+}
+
+.dv_account .div1{
+    padding: 5px;
+    background-color: rgb(233, 230, 230);
+    position: absolute;
+    top: 80%;
+    right: -50%;
+    /* width: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.dv_account .div1 a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    white-space: nowrap;
+    background-color: rgb(114, 73, 228);
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1;
+}
+.dv_account .div1 p{
+    margin: 5px;
+    padding: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.dv_account:hover .div1{
+    display: flex;
+}
+
+.oneline{
+    white-space: nowrap;
+}

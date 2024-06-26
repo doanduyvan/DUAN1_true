@@ -1,0 +1,9 @@
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+# chuyển hướng mọi yêu cầu về index
+RewriteRule ^(.+)$ index.php?url=$1 [L,QSA]

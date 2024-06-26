@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev:css": "tailwindcss -i ./public/css/admin/input.css -o ./public/css/admin/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

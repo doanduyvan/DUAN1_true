@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/",
+            "Config\\" : "src/Config/",
+            "Core\\" : "src/Core/",
+            "Controllers\\" : "src/mvc/Controllers/",
+            "Models\\" : "src/mvc/Models/",
+            "AdminControllers\\" : "src/mvc/Controllers/AdminControllers"
+        },
+        "files": ["src/Helpers/VarGlobal.php"]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll{
+    overflow-y: auto;
+   
+}
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.scroll::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+  }
+.scroll::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+
+.menu_ul li{
+    @apply my-[10px] px-[10px];
+    
+}
+.menu_ul li a{
+    @apply block py-[10px] px-[20px] rounded-[5px];
+    
+}
+.menu_ul li.active a{
+    background-color: rgba(34,109,120,1);
+}
+.menu_ul li a:hover{
+    background-color: rgba(34,109,120,1);
+}
+.fix_info li a:hover{
+    background-color: rgba(34,109,120,1);
+}
+
+.showcategory .ul .li{
+    @apply flex justify-between items-center py-[20px];
+}
+.showcategory .ul .li.limenu{
+    @apply uppercase font-bold text-[#99A1B7];
+}
+
+.showcategory .ul .li.list{
+    border-top: 1px dashed #E5E7EB;
+}
+.showcategory .ul .li.list> .right svg{
+    width: 20px;
+}
+.showcategory .ul .li.list> .right a:first-child svg{
+    width : 24px;
+}
+.showcategory .ul .li.list> .right{
+    @apply flex items-center gap-[20px];
+}
+
+
+.products-table{
+    @apply w-full;
+    /* background-color: red; */
+}
+.products-table th{
+    @apply text-left py-[15px] px-[15px];
+}
+
+.products-table tbody tr{
+    @apply py-[15px] odd:bg-slate-100 even:bg-slate-200;
+}
+
+.products-table tbody tr td{
+    @apply py-[15px] px-[15px];
+}
+
+.products-table .block_img{
+    @apply flex items-center gap-[20px];
+}
+
+.products-table .img-product{
+    @apply w-[50px] h-[50px] object-cover rounded-[8px];
+}
+
+.products-table .block_edit{
+    @apply flex items-center gap-[20px];
+}
+
+.products-table .block_edit svg{
+    @apply w-[20px];
+}
+.products-table .block_edit a:first-child svg{
+    @apply w-[24px];
+}
+
+.img-details img{
+    @apply w-[150px] h-[150px] object-cover;
+}
+
+.dv_img_details{
+    @apply relative;
+}
+
+.dv_img_details label{
+    @apply hidden absolute cursor-pointer top-[-15px] right-[-15px];
+}
+
+.dv_img_details:hover label{
+    @apply block;
+}
+

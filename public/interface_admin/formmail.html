@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <style>
+        .div{
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+        .div>h1{
+            text-align: center;
+        }
+        .div>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .div>.div2{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: rgb(230, 98, 98);
+            color: white;
+            padding: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="div">
+        <h1 class="">Vui lòng không chia sẽ mã code này cho người khác</h1>
+        <p class="">Code của bạn là : {{$code}}</p>
+        <div class="div2">
+            Vui lòng nhập mã code trên vào ô xác nhận để tiếp tục
+        </div>
+   </div>
+   
+
+</body>
+</html>
